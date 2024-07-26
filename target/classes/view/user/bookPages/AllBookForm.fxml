@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="allBookFormRoot" prefHeight="743.0" prefWidth="1306.0" style="-fx-background-color: #F5F7FB;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.user.booksPages.AllBookFromController">
+   <children>
+      <TableView fx:id="bookTable" layoutX="48.0" layoutY="79.0" prefHeight="649.0" prefWidth="1232.0" stylesheets="@../../../style/Table.css">
+         <columns>
+            <TableColumn fx:id="colBookId" prefWidth="110.4000244140625" text="BookId" />
+            <TableColumn fx:id="colTitle" prefWidth="322.4000549316406" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="262.39996337890625" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="192.79998779296875" text="Genre" />
+            <TableColumn fx:id="colStatus" prefWidth="178.4000244140625" text="Status" />
+            <TableColumn fx:id="colBorrowing" prefWidth="160.0" text="Borrowing" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearchBar" layoutX="913.0" layoutY="45.0" prefHeight="36.0" prefWidth="354.0" promptText="Search Book" style="-fx-border-color: black; -fx-border-radius: 8; -fx-background-radius: 8;" />
+   </children>
+</AnchorPane>

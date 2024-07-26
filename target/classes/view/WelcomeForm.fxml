@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="welcomePageRoot" prefHeight="514.0" prefWidth="933.0" style="-fx-background-color: FEFEFF;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.WelcomeFormController">
+   <children>
+      <ImageView fitHeight="484.0" fitWidth="518.0" layoutX="10.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/2425520.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="welcomeRoot" layoutX="490.0" layoutY="71.0" prefHeight="417.0" prefWidth="410.0" />
+      <JFXButton fx:id="btnUser" layoutX="593.0" layoutY="33.0" onAction="#btnUserLoginOnAction" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: EDE9F0; -fx-border-color: #75a3b1; -fx-background-radius: 2; -fx-border-radius: 2;" text="User" textFill="#75a3b1">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAdmin" layoutX="731.0" layoutY="33.0" onAction="#btnAdminLoginOnAction" prefHeight="24.0" prefWidth="66.0" style="-fx-background-color: EDE9F0; -fx-border-color: #75a3b1; -fx-background-radius: 2; -fx-border-radius: 2;" text="Admin" textFill="#75a3b1">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>
